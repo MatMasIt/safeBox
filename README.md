@@ -5,7 +5,7 @@ You can give keys (passwords) to a number of people and have them enter them int
 
 Note:
 
-The encryption program is not yet done, for now you will have to nanually
+The archive creation program is not yet done, for now you will have to nanually do it yourself
 ## Archive Creation
 ### 1. Create a zip achive
 ### 2.  Add the "meta.json" file inside
