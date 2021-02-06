@@ -21,8 +21,9 @@ The file should be structured in this way
 }
 ```
 #### Keys
-|title|The Title of the archive|
+|Key|Description|
 |-----|-----|
+|title|The Title of the archive|
 |author|The Author|
 |message|A message shown before the key insertion|
 |nkeys|The number of keys|
