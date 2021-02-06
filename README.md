@@ -1,7 +1,10 @@
 # safeBox
 A tool to share an archive with important messages in special events.
+
 You can give keys (passwords) to a number of people and have them enter them into the correct order to extract your files
+
 Note:
+
 The encryption program is not yet done, for now you will have to nanually
 ## Archive Creation
 ### 1. Create a zip achive
@@ -27,6 +30,7 @@ The file should be structured in this way
 ### 3. Create a second zip archive and add the files to be stored
 ### 4. Password protect said file with a concatenation of all the keys
 (password1, password 2 -> password1password2)
+
 When you hand over the keys, remember to tell the index the key occupies in the list, starting from 1
 in this case, 
 1. password1
