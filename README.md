@@ -7,7 +7,7 @@ Note:
 
 The archive creation program is not yet done, for now you will have to nanually do it yourself
 ## Archive Creation
-### 1. Create a zip achive
+### 1. Create a zip achive named "data.zip"
 ### 2.  Add the "meta.json" file inside
 The file should be structured in this way
 #### Example
