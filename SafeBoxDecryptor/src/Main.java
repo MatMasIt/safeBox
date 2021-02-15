@@ -151,9 +151,9 @@ public class Main extends JFrame implements ActionListener{
 					    JOptionPane.ERROR_MESSAGE);
 				System.exit(1);
 			}
-			String keys="";
+			String keys="|";
 			for(int i=0;i<this.nkeys;i++){
-				keys+=JOptionPane.showInputDialog("Key No. "+String.valueOf(i+1));
+				keys+=JOptionPane.showInputDialog("Key No. "+String.valueOf(i+1))+"|";
 			}
 			 ZipFile zipFile = new ZipFile(f);
 			    try {
