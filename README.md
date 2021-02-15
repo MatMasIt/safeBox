@@ -29,8 +29,8 @@ The file should be structured in this way
 |nkeys|The number of keys|
 |unixcreated|The UNIX timestamp (seconds) when this archive was created|
 ### 3. Create a second zip archive and add the files to be stored
-### 4. Password protect said file with a concatenation of all the keys
-(password1, password 2 -> password1password2)
+### 4. Password protect said file with a concatenation of all the keys surrounded by "|"
+(password1, password 2 -> |password1|password2|)
 
 When you hand over the keys, remember to tell the index the key occupies in the list, starting from 1
 in this case, 
