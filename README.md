@@ -13,11 +13,11 @@ The file should be structured in this way
 #### Example
 ```JSON
 {
-"title":"Title",
-"author":"Author",
-"message":"Lorem ipsum\ndolor sit amet",
-"nkeys":2,
-"unixcreated":1612619383
+  "title": "Title",
+  "author": "Author",
+  "message": "Lorem ipsum\ndolor sit amet",
+  "nkeys": 2,
+  "unixcreated": 1612619383
 }
 ```
 #### Keys
