@@ -2,15 +2,24 @@
 A tool to share an archive with important messages in special events.
 
 You can give keys (passwords) to a number of people and have them enter them into the correct order to extract your files
+## Creating a safebox:
+### 1. Using the SafeBoxEncryptor
 
-Note:
+You will need to use "encrypt.php" script 
 
-The archive creation program is not yet done, for now you will have to nanually do it yourself
-## Archive Creation
-### 1. Create a zip achive named "data.zip"
-### 2.  Add the "meta.json" file inside
+(php 7.5, run from cli as `php encrypt.php`)
+
+The script will guide through the creation of a safebox
+
+### 2. Manually
+
+Manually create an archvie following the file specification
+
+#### Archive Creation
+##### 1. Create a zip achive named "data.zip"
+##### 2.  Add the "meta.json" file inside
 The file should be structured in this way
-#### Example
+###### Example
 ```JSON
 {
   "title": "Title",
@@ -20,7 +29,7 @@ The file should be structured in this way
   "unixcreated": 1612619383
 }
 ```
-#### Keys
+###### Keys
 |Key|Description|
 |-----|-----|
 |title|The Title of the archive|
@@ -28,16 +37,16 @@ The file should be structured in this way
 |message|A message shown before the key insertion|
 |nkeys|The number of keys|
 |unixcreated|The UNIX timestamp (seconds) when this archive was created|
-### 3. Create a second zip archive and add the files to be stored
-### 4. Password protect said file with a concatenation of all the keys surrounded by "|"
+##### 3. Create a second zip archive and add the files to be stored
+##### 4. Password protect said file with a concatenation of all the keys surrounded by "|"
 (password1, password 2 -> |password1|password2|)
 
 When you hand over the keys, remember to tell the index the key occupies in the list, starting from 1
 in this case, 
 1. password1
 2. password2
-### 5. Add the second archive to the first archive (step 1)
-### 6. Change the firt archive's (step 1) extension to .sfbx
+##### 5. Add the second archive to the first archive (step 1)
+##### 6. Change the firt archive's (step 1) extension to .sfbx
 
 
 On opening the file with SafeBox, the metadata will be shown and when all the keys will have been inserted in the correct order, the folder will be extracted
