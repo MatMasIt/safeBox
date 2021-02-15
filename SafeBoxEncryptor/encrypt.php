@@ -14,7 +14,6 @@ do{
 }
 while (trim($message) != "quit");
 $nkeys = (int)readline("\nHow many keys? : ");
-$keysArr = [];
 $keytot = [];
 for ($i = 0;$i < $nkeys;$i++)
 {
