@@ -180,6 +180,7 @@ public class Main extends JFrame implements ActionListener{
 					    JOptionPane.ERROR_MESSAGE);
 				System.exit(1);
 			}
+			f.delete();
 			JOptionPane.showMessageDialog(this,
 				    "Files have been extracted in the current working folder",
 				    "Ok",
